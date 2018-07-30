@@ -2,6 +2,10 @@ import React from 'react';
 import { View, TouchableHighlight, Image, Button, StyleSheet } from 'react-native';
 
 import home from '../images/icons/home.png';
+import apps from '../images/icons/apps.png';
+import cam from '../images/icons/cam.png';
+import info from '../images/icons/info.png';
+import list from '../images/icons/list.png';
 
 const Menu = props => (
     <View style={style.container}>
@@ -10,13 +14,21 @@ const Menu = props => (
                 <Image source={home} size={40} />
             </TouchableHighlight>
         
-            <Button title='ok' />
+            <TouchableHighlight onPress={() => { alert('Ok'); }}>
+                <Image source={apps} size={40} />
+            </TouchableHighlight>
         
-            <Button title='ok' />
+            <TouchableHighlight onPress={() => { alert('Ok'); }}>
+                <Image source={cam} size={50} />
+            </TouchableHighlight>
         
-            <Button title='ok' />
+            <TouchableHighlight onPress={() => { alert('Ok'); }}>
+                <Image source={info} size={40} />
+            </TouchableHighlight>
        
-            <Button title='ok' />
+            <TouchableHighlight onPress={() => { alert('Ok'); }}>
+                <Image source={list} size={40} />
+            </TouchableHighlight>
         </View>
     </View>
 );
