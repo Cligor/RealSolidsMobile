@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet, StatusBar, ImageBackground } from 'react-native';
 
 import { Menu } from '../realSolids';
-import logo from '../images/logo/100x100.png';
+import logo from '../images/logo/opacity-500x500.png';
 
 export default class Home extends Component {
     render() {
-        return(
+        return (
             <View style={style.Container}>
                 <StatusBar backgroundColor='#5cb85c' barStyle="light-content" />
 
