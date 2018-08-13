@@ -1,26 +1,29 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, StatusBar, ImageBackground, Button } from 'react-native';
+import { View, Text, StyleSheet, StatusBar, ImageBackground, Button, TouchableOpacity} from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
 import logo from '../images/logo/opacity-500x500.png';
 
 export default class Inicio extends Component {
+
+    iniciar() {
+        Actions.apresentacao();
+    }
+
     render() {
         return (
-            <View style={style.Container}>
-                <StatusBar backgroundColor='#5cb85c' barStyle="light-content" />
+            <ImageBackground source={logo} style={style.container} >
+                <View style={[style.conteudo, { marginTop: 60}]}>
+                    <Text style={style.titulo}>Real Solids</Text>
+                </View>
 
-                <ImageBackground source={logo} style={style.backgroundImage}>
-                    <View style={style.Conteudo}>
-                        <Text>Funfou</Text>
-                        <Button 
-                            title='Entrar' 
-                            style={style.button} 
-                            onPress={() => Actions.apresentacao()} 
-                        />
-                    </View>
-                </ImageBackground>
-            </View>
+                <View style={[style.conteudo, {justifyContent: 'center'}]}>
+                    <TouchableOpacity style={style.button}  onPress={() => this.iniciar()}>
+                        <Text style={style.textButton}>INICIAR</Text>
+                    </TouchableOpacity>
+                </View>
+               
+            </ImageBackground>
         );
     }
 }
@@ -29,21 +32,36 @@ const style = StyleSheet.create({
     container: {
         backgroundColor: '#FFF',
         flex: 1,
+    },
+
+    titulo: {
+        fontSize: 40,
+        fontWeight: 'bold',
+        color: '#5cb85c',
+        textAlign: 'center',
+    },
+
+    button: {
         alignItems: 'center',
         justifyContent: 'center',
+        padding: 5,
+        width: '75%',
+        height: 40,
+        backgroundColor: '#5cb85c',
+
+    },
+
+    textButton: {
+        color: '#FFF',
+        fontWeight: 'bold',
+        fontSize: 20,
     },
 
     conteudo: {
+        height: '50%',
         alignItems: 'center',
-        justifyContent: 'space-between',
-    },
-    
-    button: {
-        backgroundColor: '#5cb85c'
-    },
-
-    backgroundImage: {
-        flex: 1,
+        // margin: 20,
+        // justifyContent: 'center',
     },
     
 });
