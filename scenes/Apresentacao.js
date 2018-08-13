@@ -88,8 +88,8 @@ const style = StyleSheet.create({
         // borderWidth: 1,
         width: '66%',
         height: 70,
-        marginLeft: '29%',
-        marginTop: 25,
+        marginLeft: '25%',
+        marginTop: '1%',
     },
 
     fala: {
