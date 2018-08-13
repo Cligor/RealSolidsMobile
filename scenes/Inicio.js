@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, StatusBar, ImageBackground, Button, TouchableOpacity} from 'react-native';
+import { 
+        View, 
+        Text, 
+        StyleSheet, 
+        StatusBar, 
+        ImageBackground, 
+        Button, 
+        TouchableOpacity
+    } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
 import logo from '../images/logo/opacity-500x500.png';
@@ -13,12 +21,12 @@ export default class Inicio extends Component {
     render() {
         return (
             <ImageBackground source={logo} style={style.container} >
-                <View style={[style.conteudo, { marginTop: 60}]}>
+                <View style={[style.conteudo, { marginTop: 60 }]}>
                     <Text style={style.titulo}>Real Solids</Text>
                 </View>
 
-                <View style={[style.conteudo, {justifyContent: 'center'}]}>
-                    <TouchableOpacity style={style.button}  onPress={() => this.iniciar()}>
+                <View style={[style.conteudo, { justifyContent: 'center' }]}>
+                    <TouchableOpacity style={style.button} onPress={() => this.iniciar()}>
                         <Text style={style.textButton}>INICIAR</Text>
                     </TouchableOpacity>
                 </View>

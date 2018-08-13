@@ -17,13 +17,12 @@ export default class Menu extends Component {
 
                 { /* Coluna 1 */ }
                 <View style={style.containerButtons} >
-                    <TouchableOpacity style={ style.buttons } onPress={() => Actions.masp()}>
-                        <Text style={style.textButton}>MASP</Text> 
-                         
+                    <TouchableOpacity style={[style.buttons, { backgroundColor: 'red' }]} onPress={() => Actions.masp()}>
+                        <Text style={style.textButton}>Museu de Arte em São Paulo</Text>   
                     </TouchableOpacity>
                     
-                    <TouchableOpacity style={ style.buttons } onPress={() => Actions.masp()}>
-                        <Text>CATEDRAL</Text> 
+                    <TouchableOpacity style={[style.buttons, { backgroundColor: 'green' }]} onPress={() => Actions.masp()}>
+                        <Text>Catedral em Maringá</Text> 
                          
                     </TouchableOpacity>
                     { /* adicionar outros botões mais botões */}
@@ -31,13 +30,13 @@ export default class Menu extends Component {
 
                 { /* Coluna 2 */ }
                 <View style={style.containerButtons}>
-                <TouchableOpacity style={ style.buttons } onPress={() => Actions.masp()}>
-                        <Text>MASP</Text> 
+                <TouchableOpacity style={[style.buttons, { backgroundColor: 'yellow' }]} onPress={() => Actions.masp()}>
+                        <Text>Praça da Ribeira em Portugal</Text> 
                          
                     </TouchableOpacity>
 
-                     <TouchableOpacity style={ style.buttons } onPress={() => Actions.masp()}>
-                        <Text>MASP</Text> 
+                     <TouchableOpacity style={[style.buttons, { backgroundColor: 'blue' }]} onPress={() => Actions.masp()}>
+                        <Text>Ópera de Arame em Curitiba</Text> 
                          
                     </TouchableOpacity>
                 </View>
@@ -64,7 +63,7 @@ const style = StyleSheet.create({
 
     buttons: {
         width: 150,
-        backgroundColor: 'red',
+        height: 80,
         alignItems: 'center'
     },
 
