@@ -93,7 +93,7 @@ const style = StyleSheet.create({
         width: '66%',
         height: 70,
         marginLeft: '25%',
-        marginTop: '1%',
+        marginTop: '5%',
     },
 
     fala: {

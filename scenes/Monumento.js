@@ -14,14 +14,6 @@ import next from '../images/icons/next.png';
 import conversa from '../images/mascote/conversa.png';
 import masp from '../images/monumentos/masp.png';
 
-// const falas = [
-//     'Olá, sou o Tales. Serei seu parceiro nessa aventura aqui no RealSolids.',
-//     'Minha missão é levar você para um passeio por alguns lugares muito bonitos e importantes.',
-//     'Vou aproveitar para te mostrar como a matemática aparece no nosso dia-a-dia ' + 
-//     'e nem sempre percebemos.',
-//     'Vamos lá, escolha um desses lugares para visitarmos...'
-// ];
-
 let falas = [];
 
 export default class Apresentacao extends Component {
@@ -29,20 +21,19 @@ export default class Apresentacao extends Component {
     constructor(props) {
         super(props);
         falas = [
-            'Olá, sou o Tales. Serei seu parceiro nessa aventura aqui no RealSolids.',
-            'Minha missão é levar você para um passeio por alguns lugares muito bonitos e importantes.',
-            'Vou aproveitar para te mostrar como a matemática aparece no nosso dia-a-dia ' + 
-            'e nem sempre percebemos.',
-            'Vamos lá, escolha um desses lugares para visitarmos...'
+            'Conhecido como MASP,',
+            'o museu de arte de São Paulo Assis Chateaubriand está instalado em uma obra arquitetonica',
+            'planejada por Lina Bo Bardi e levou 10 anos para ser construída.'
         ];
         this.state = { indice: 0 };
     }
 
     proximo() {
-        if (this.state.indice < 3) {
+        if (this.state.indice < 2) {
             const i = this.state.indice;
             this.setState({ indice: i + 1 });
         } else {
+            alert('Próximas sessões em desenvolvimento')
             Actions.menu();
         }
     }
@@ -52,7 +43,7 @@ export default class Apresentacao extends Component {
             <View style={style.container}>
                 <View style={[style.innerContainer, { alignItems: 'center', paddingTop: 60 }]}>
                     <Text style={style.titulo}>Real Solids</Text>
-                    <Image source={masp} />
+                    <Image source={masp} size={20} />
                 </View>
 
                 <View style={style.innerContainer}>
@@ -100,7 +91,7 @@ const style = StyleSheet.create({
         width: '66%',
         height: 70,
         marginLeft: '25%',
-        marginTop: '1%',
+        marginTop: '5%',
     },
 
     fala: {
