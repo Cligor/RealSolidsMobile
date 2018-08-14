@@ -44,11 +44,11 @@ export default class Apresentacao extends Component {
     render() {
         return (
             <View style={style.container}>
-                <View style={[style.innerContainer, { alignItems: 'center', paddingTop: 60 }]}>
+                <View style={[style.innerContainer, { alignItems: 'center', paddingTop: 60, height: '30%' }]}>
                     <Text style={style.titulo}>Real Solids</Text>
                 </View>
 
-                <View style={style.innerContainer}>
+                <View style={[style.innerContainer, { height: '70%' }]}>
                     <ImageBackground source={conversa} style={{ flex: 1 }}>
                         <View style={style.texto}>
                             <Text style={style.fala}>
@@ -77,7 +77,6 @@ const style = StyleSheet.create({
     },
 
     innerContainer: {
-        height: '50%',
         width: '100%',
     },
 
@@ -91,9 +90,9 @@ const style = StyleSheet.create({
     texto: {
         // borderWidth: 1,
         width: '66%',
-        height: 70,
+        height: '25%',
         marginLeft: '25%',
-        marginTop: '5%',
+        marginTop: '10%',
     },
 
     fala: {
