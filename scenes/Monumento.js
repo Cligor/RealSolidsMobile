@@ -12,15 +12,22 @@ import { Actions } from 'react-native-router-flux';
 
 import next from '../images/icons/next.png';
 import conversa from '../images/mascote/conversa.png';
+import masp from '../images/monumentos/masp.png';
+
+// const falas = [
+//     'Olá, sou o Tales. Serei seu parceiro nessa aventura aqui no RealSolids.',
+//     'Minha missão é levar você para um passeio por alguns lugares muito bonitos e importantes.',
+//     'Vou aproveitar para te mostrar como a matemática aparece no nosso dia-a-dia ' + 
+//     'e nem sempre percebemos.',
+//     'Vamos lá, escolha um desses lugares para visitarmos...'
+// ];
 
 let falas = [];
 
 export default class Apresentacao extends Component {
-    
 
     constructor(props) {
         super(props);
-
         falas = [
             'Olá, sou o Tales. Serei seu parceiro nessa aventura aqui no RealSolids.',
             'Minha missão é levar você para um passeio por alguns lugares muito bonitos e importantes.',
@@ -28,7 +35,6 @@ export default class Apresentacao extends Component {
             'e nem sempre percebemos.',
             'Vamos lá, escolha um desses lugares para visitarmos...'
         ];
-
         this.state = { indice: 0 };
     }
 
@@ -46,6 +52,7 @@ export default class Apresentacao extends Component {
             <View style={style.container}>
                 <View style={[style.innerContainer, { alignItems: 'center', paddingTop: 60 }]}>
                     <Text style={style.titulo}>Real Solids</Text>
+                    <Image source={masp} />
                 </View>
 
                 <View style={style.innerContainer}>
