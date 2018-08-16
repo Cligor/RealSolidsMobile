@@ -20,7 +20,7 @@ export default class Menu extends Component {
                 { /* Coluna 1 */ }
                 <View style={style.innerContainer}>
                     <View style={style.containerButtons} >
-                        <TouchableOpacity style={[style.buttons, { backgroundColor: 'red' }]} onPress={() => Actions.monumento()}>
+                        <TouchableOpacity style={[style.buttons, { backgroundColor: 'red' }]} onPress={() => Actions.masp()}>
                             <Text style={style.textButton}>MASP</Text>   
                         </TouchableOpacity>
                         
@@ -77,18 +77,6 @@ const style = StyleSheet.create({
         justifyContent: 'space-between',
         width: '50%',
         padding: '2%',
-    },
-
-    buttons: {
-        width: 150,
-        height: 45,
-        alignItems: 'center',
-        justifyContent: 'center',
-        margin: 10,
-    },
-
-    textButton: {
-        color: 'white',
     },
 
     viewButtons: {

@@ -12,7 +12,7 @@ import { Actions } from 'react-native-router-flux';
 
 import next from '../images/icons/next.png';
 import conversa from '../images/mascote/conversa.png';
-import masp from '../images/monumentos/masp.png';
+import masp from '../images/monumentos/masp50.png';
 
 let falas = [];
 
@@ -22,7 +22,8 @@ export default class Apresentacao extends Component {
         super(props);
         falas = [
             'Conhecido como MASP,',
-            'o museu de arte de São Paulo Assis Chateaubriand está instalado em uma obra arquitetonica',
+            'o museu de arte de São Paulo Assis Chateaubriand está instalado em uma ' +
+            'obra arquitetonica',
             'planejada por Lina Bo Bardi e levou 10 anos para ser construída.'
         ];
         this.state = { indice: 0 };
@@ -33,15 +34,19 @@ export default class Apresentacao extends Component {
             const i = this.state.indice;
             this.setState({ indice: i + 1 });
         } else {
-            alert('Próximas sessões em desenvolvimento')
-            Actions.menu();
+            Actions.paralelepipedo();
         }
     }
 
     render() {
         return (
             <View style={style.container}>
-                <View style={[style.innerContainer, { alignItems: 'center', paddingTop: 60, height: '60%', }]}>
+                <View 
+                    style={
+                            [style.innerContainer, 
+                            { alignItems: 'center', paddingTop: 60, height: '60%', }]
+                            }
+                >
                     <Text style={style.titulo}>Real Solids</Text>
                     <Image source={masp} size={20} />
                 </View>
