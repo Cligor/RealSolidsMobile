@@ -6,10 +6,10 @@ import {
     StyleSheet 
 } from 'react-native';
 
-const botao = props => (
+const Botao = props => (
     <View>
         <TouchableOpacity style={[style.buttons, props.style]} onPress={props.onPress}>
-            <Text>{props.text}</Text>
+            <Text style={style.textButton}>{props.text}</Text>
         </TouchableOpacity>
     </View>
 );
@@ -21,6 +21,7 @@ const style = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         margin: 10,
+        elevation: 10,
     },
 
     textButton: {
@@ -28,4 +29,4 @@ const style = StyleSheet.create({
     },
 });
 
-export { botao };
+export { Botao };

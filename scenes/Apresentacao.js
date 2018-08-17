@@ -101,8 +101,10 @@ const style = StyleSheet.create({
 
     button: {
         alignItems: 'center',
-        paddingTop: '46%',
+        paddingTop: '44.75%',
         marginLeft: '85%',
         borderRadius: 20,
     },
+
+    
 });

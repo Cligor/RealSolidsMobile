@@ -6,6 +6,8 @@ import {
     Text
 } from 'react-native';
 
+import { Botao } from '../realSolids';
+
 import { Actions } from 'react-native-router-flux';
 
 export default class Menu extends Component {
@@ -20,25 +22,33 @@ export default class Menu extends Component {
                 { /* Coluna 1 */ }
                 <View style={style.innerContainer}>
                     <View style={style.containerButtons} >
-                        <TouchableOpacity style={[style.buttons, { backgroundColor: 'red' }]} onPress={() => Actions.masp()}>
-                            <Text style={style.textButton}>MASP</Text>   
-                        </TouchableOpacity>
+                        <Botao 
+                            style={{ backgroundColor: 'red' }} 
+                            text='MASP'
+                            onPress={() => Actions.masp()}
+                        /> 
                         
-                        <TouchableOpacity style={[style.buttons, { backgroundColor: 'green' }]} onPress={() => alert('Em desenvolvimento...')}>
-                            <Text style={style.textButton}>Catedral de Maringá</Text>   
-                        </TouchableOpacity>
+                        <Botao
+                            style={{ backgroundColor: 'green' }}
+                            text='Catedral de Maringá'
+                            onPress={() => Actions.catedral()}
+                        />
                         { /* adicionar outros botões mais botões */}
                     </View>
 
                     { /* Coluna 2 */ }
                     <View style={style.containerButtons}>
-                        <TouchableOpacity style={[style.buttons, { backgroundColor: 'purple' }]} onPress={() => alert('Em desenvolvimento...')}>
-                                <Text style={style.textButton}>Praça da Ribeira</Text>   
-                        </TouchableOpacity>
+                        <Botao 
+                            style={{ backgroundColor: 'purple' }} 
+                            text='Praça da Ribeira'
+                            onPress={() => Actions.pracaDaRibeira()}
+                        />
 
-                        <TouchableOpacity style={[style.buttons, { backgroundColor: 'blue' }]} onPress={() => alert('Em desenvolvimento...')}>
-                            <Text style={style.textButton}>Ópera de Arame</Text>   
-                        </TouchableOpacity>
+                        <Botao 
+                            style={{ backgroundColor: 'blue' }} 
+                            text='Ópera de Arame'
+                            onPress={() => Actions.operaArame()}
+                        />
                     </View>
                 </View>
 
@@ -79,7 +89,4 @@ const style = StyleSheet.create({
         padding: '2%',
     },
 
-    viewButtons: {
-        //styles
-    },
 });

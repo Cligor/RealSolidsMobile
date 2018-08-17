@@ -5,6 +5,7 @@ import Inicio from '../scenes/Inicio';
 import Apresentacao from '../scenes/Apresentacao';
 import Menu from '../scenes/Menu';
 import Masp from '../monumentos/Masp';
+import ExerciciosMasp from '../exercicios/ExerciciosMasp';
 import Paralelepipedo from '../animacoes/Paralelepipedo';
 
 export default class Nav extends Component {
@@ -16,6 +17,7 @@ export default class Nav extends Component {
                     <Scene key='apresentacao' component={Apresentacao} hideNavBar />
                     <Scene key='menu' component={Menu} hideNavBar />
                     <Scene key='masp' component={Masp} hideNavBar />
+                    <Scene key='exercicioMasp' component={ExerciciosMasp} hideNavBar />
                     <Scene key='paralelepipedo' component={Paralelepipedo} hideNavBar />
                 </Stack>
             </Router>

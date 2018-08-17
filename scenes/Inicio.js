@@ -18,6 +18,9 @@ export default class Inicio extends Component {
     render() {
         return (
             <ImageBackground source={logo} style={style.container} >
+                
+                { /* Adicionar icone de informações */}
+
                 <View style={[style.conteudo, { marginTop: 60 }] }>
                     <Text style={style.titulo}>Real Solids</Text>
                 </View>
@@ -53,7 +56,7 @@ const style = StyleSheet.create({
         width: '75%',
         height: 40,
         backgroundColor: '#5cb85c',
-
+        elevation: 10,
     },
 
     textButton: {

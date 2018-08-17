@@ -12,7 +12,7 @@ import { Actions } from 'react-native-router-flux';
 
 import next from '../images/icons/next.png';
 import conversa from '../images/mascote/conversa.png';
-import masp from '../images/monumentos/masp50.png';
+import masp from '../images/monumentos/MASP120.png';
 
 let falas = [];
 
@@ -34,7 +34,7 @@ export default class Apresentacao extends Component {
             const i = this.state.indice;
             this.setState({ indice: i + 1 });
         } else {
-            Actions.paralelepipedo();
+            Actions.exercicioMasp();
         }
     }
 
@@ -44,14 +44,14 @@ export default class Apresentacao extends Component {
                 <View 
                     style={
                             [style.innerContainer, 
-                            { alignItems: 'center', paddingTop: 60, height: '60%', }]
+                            { alignItems: 'center', paddingTop: 60, height: '45%', }]
                             }
                 >
                     <Text style={style.titulo}>Real Solids</Text>
-                    <Image source={masp} size={20} />
+                    <Image source={masp} />
                 </View>
 
-                <View style={[style.innerContainer, { height: '40%' }]}>
+                <View style={[style.innerContainer, { height: '55%' }]}>
                     <ImageBackground source={conversa} style={{ flex: 1 }}>
                         <View style={style.texto}>
                             <Text style={style.fala}>
@@ -93,7 +93,7 @@ const style = StyleSheet.create({
     texto: {
         // borderWidth: 1,
         width: '66%',
-        height: '25%',
+        height: '23%',
         marginLeft: '25%',
         marginTop: '3%',
     },
