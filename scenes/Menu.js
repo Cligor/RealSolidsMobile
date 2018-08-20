@@ -41,7 +41,7 @@ export default class Menu extends Component {
                         <Botao 
                             style={{ backgroundColor: 'purple' }} 
                             text='Praça da Ribeira'
-                            onPress={() => Actions.pracaDaRibeira()}
+                            onPress={() => Actions.pracaRibeira()}
                         />
 
                         <Botao 

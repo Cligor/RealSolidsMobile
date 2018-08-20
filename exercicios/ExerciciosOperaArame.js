@@ -9,17 +9,17 @@ import {
 
 import { Botao } from '../realSolids';
 
-import masp from '../images/monumentos/MASP150.png';
+import opera from '../images/monumentos/OPERADEARAME150.png';
 import { Actions } from 'react-native-router-flux';
 
 export default class Menu extends Component {
 
     errado(solido) {
-        Alert.alert('Errou.', 'O masp não é ' + solido + '.');
+        Alert.alert('Errou.', 'A Ópera de Arame não é ' + solido + '.');
     }
 
     certo(solido) {
-        Alert.alert('Acertou!', 'O MASP é um paralelepipedo.');
+        Alert.alert('Acertou!', 'A Ópera de Arame é um cilindro.');
         Actions.paralelepipedo();
     }
 
@@ -31,7 +31,7 @@ export default class Menu extends Component {
                 </View>
                 
                 <View style={style.imagem}>
-                    <Image source={masp} />
+                    <Image source={opera} />
                 </View>
                 { /*Separando os botões em duas colunas (se precisar fazer uma terceira */}
 
@@ -44,20 +44,21 @@ export default class Menu extends Component {
                             onPress={() => this.errado('um Cubo')}
                         /> 
                         
-                        <Botao
-                            style={{ backgroundColor: 'green' }}
-                            text='Pirâmide'
-                            onPress={() => this.errado('uma Pirâmide')}
+                       
+                         <Botao 
+                            style={{ backgroundColor: 'purple' }} 
+                            text='Cilindro'
+                            onPress={() => this.certo()}
                         />
                         { /* adicionar outros botões mais botões */}
                     </View>
 
                     { /* Coluna 2 */ }
                     <View style={style.containerButtons}>
-                        <Botao 
-                            style={{ backgroundColor: 'purple' }} 
-                            text='Paralelepipedo'
-                            onPress={() => this.certo()}
+                        <Botao
+                            style={{ backgroundColor: 'green' }}
+                            text='Pirâmide'
+                            onPress={() => this.errado('uma Pirâmide')}
                         />
 
                         <Botao 

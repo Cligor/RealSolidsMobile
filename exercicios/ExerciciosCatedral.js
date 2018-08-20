@@ -9,18 +9,18 @@ import {
 
 import { Botao } from '../realSolids';
 
-import masp from '../images/monumentos/MASP150.png';
+import catedral from '../images/monumentos/CATEDRAL150.png';
 import { Actions } from 'react-native-router-flux';
 
 export default class Menu extends Component {
 
     errado(solido) {
-        Alert.alert('Errou.', 'O masp não é ' + solido + '.');
+        Alert.alert('Errou.', 'A Catedral não é ' + solido + '.');
     }
 
     certo(solido) {
-        Alert.alert('Acertou!', 'O MASP é um paralelepipedo.');
-        Actions.paralelepipedo();
+        Alert.alert('Acertou!', 'A Catedral é um cone.');
+        Actions.cone();
     }
 
     render() {
@@ -31,7 +31,7 @@ export default class Menu extends Component {
                 </View>
                 
                 <View style={style.imagem}>
-                    <Image source={masp} />
+                    <Image source={catedral} />
                 </View>
                 { /*Separando os botões em duas colunas (se precisar fazer uma terceira */}
 
@@ -54,17 +54,20 @@ export default class Menu extends Component {
 
                     { /* Coluna 2 */ }
                     <View style={style.containerButtons}>
-                        <Botao 
-                            style={{ backgroundColor: 'purple' }} 
-                            text='Paralelepipedo'
-                            onPress={() => this.certo()}
-                        />
 
-                        <Botao 
+                       <Botao 
                             style={{ backgroundColor: 'blue' }} 
                             text='Esfera'
                             onPress={() => this.errado('uma Esfera')}
                         />
+
+                        <Botao 
+                            style={{ backgroundColor: 'purple' }} 
+                            text='Cone'
+                            onPress={() => this.certo()}
+                        />
+
+                      
                     </View>
                 </View>
 
