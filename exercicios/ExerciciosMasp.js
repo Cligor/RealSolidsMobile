@@ -9,25 +9,25 @@ import {
 
 import { Botao } from '../realSolids';
 
-import masp from '../images/monumentos/MASP150.png';
+import masp from '../images/monumentos/MASP300.png';
 import { Actions } from 'react-native-router-flux';
 
 export default class Menu extends Component {
 
     errado(solido) {
-        Alert.alert('Errou.', 'O masp não é ' + solido + '.');
+        Alert.alert('Ops, você não acertou!', 'O MASP não é ' + solido + ', vamos tentar novamente: ');
     }
 
     certo(solido) {
-        Alert.alert('Acertou!', 'O MASP é um paralelepipedo.');
+        Alert.alert('Parabéns você Acertou!', 'O  MASP é um paralelepipedo.');
         Actions.paralelepipedo();
     }
 
     render() {
         return (
             <View style={style.container}>
-                <View style={[style.titleContainer, { alignItems: 'center', paddingTop: 60 }]}>
-                    <Text style={style.titulo}>Real Solids</Text>
+                <View style={[style.titleContainer, { alignItems: 'center', paddingTop: 30 }]}>
+                    <Text style={style.titulo}>Qual sólido gerométrico você identifica nessa imagem ?</Text>
                 </View>
                 
                 <View style={style.imagem}>
@@ -41,13 +41,13 @@ export default class Menu extends Component {
                         <Botao 
                             style={{ backgroundColor: 'red' }} 
                             text='Cubo'
-                            onPress={() => this.errado('um Cubo')}
+                            onPress={() => this.errado('um cubo')}
                         /> 
                         
                         <Botao
                             style={{ backgroundColor: 'green' }}
                             text='Pirâmide'
-                            onPress={() => this.errado('uma Pirâmide')}
+                            onPress={() => this.errado('uma pirâmide')}
                         />
                         { /* adicionar outros botões mais botões */}
                     </View>
@@ -63,7 +63,7 @@ export default class Menu extends Component {
                         <Botao 
                             style={{ backgroundColor: 'blue' }} 
                             text='Esfera'
-                            onPress={() => this.errado('uma Esfera')}
+                            onPress={() => this.errado('uma esfera')}
                         />
                     </View>
                 </View>
@@ -99,7 +99,7 @@ const style = StyleSheet.create({
     },
 
     titulo: {
-        fontSize: 40,
+        fontSize: 20,
         fontWeight: 'bold',
         color: '#5cb85c',
         textAlign: 'center',

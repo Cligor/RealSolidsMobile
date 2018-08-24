@@ -9,25 +9,25 @@ import {
 
 import { Botao } from '../realSolids';
 
-import cubo from '../images/monumentos/CUBODARIBEIRA150.png';
+import cubo from '../images/monumentos/CUBODARIBEIRA300.png';
 import { Actions } from 'react-native-router-flux';
 
 export default class Menu extends Component {
 
     errado(solido) {
-        Alert.alert('Errou.', 'A Praça da Ribeira não é ' + solido + '.');
+        Alert.alert('Ops, você não acertou!', 'A Praça da Ribeira não é ' + solido + '.');
     }
 
     certo(solido) {
-        Alert.alert('Acertou!', 'A Praça da Ribeira é um cubo.');
+        Alert.alert('Parabéns você Acertou!', 'A Praça da Ribeira é um cubo.');
         Actions.cone();
     }
 
     render() {
         return (
             <View style={style.container}>
-                <View style={[style.titleContainer, { alignItems: 'center', paddingTop: 60 }]}>
-                    <Text style={style.titulo}>Real Solids</Text>
+                <View style={[style.titleContainer, { alignItems: 'center', paddingTop: 30 }]}>
+                    <Text style={style.titulo}>Qual sólido gerométrico você identifica nessa imagem ?</Text>
                 </View>
                 
                 <View style={style.imagem}>
@@ -106,7 +106,7 @@ const style = StyleSheet.create({
     },
 
     titulo: {
-        fontSize: 40,
+        fontSize: 20,
         fontWeight: 'bold',
         color: '#5cb85c',
         textAlign: 'center',

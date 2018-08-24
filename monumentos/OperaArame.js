@@ -12,7 +12,7 @@ import { Actions } from 'react-native-router-flux';
 
 import next from '../images/icons/next.png';
 import conversa from '../images/mascote/conversa.png';
-import opera from '../images/monumentos/OPERADEARAME120.png';
+import opera from '../images/monumentos/OPERADEARAME300.png';
 
 let falas = [];
 
@@ -43,10 +43,10 @@ export default class Apresentacao extends Component {
                 <View 
                     style={
                             [style.innerContainer, 
-                            { alignItems: 'center', paddingTop: 60, height: '45%', }]
+                            { alignItems: 'center', paddingTop: 20, height: '45%', }]
                             }
                 >
-                    <Text style={style.titulo}>Real Solids</Text>
+                    
                     <Image source={opera} />
                 </View>
 

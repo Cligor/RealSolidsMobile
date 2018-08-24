@@ -17,11 +17,15 @@ const Botao = props => (
 const style = StyleSheet.create({
     buttons: {
         width: 150,
-        height: 45,
+        height: 45, 
         alignItems: 'center',
         justifyContent: 'center',
         margin: 10,
-        elevation: 10,
+        elevation: 10
+
+
+
+
     },
 
     textButton: {

@@ -9,25 +9,25 @@ import {
 
 import { Botao } from '../realSolids';
 
-import opera from '../images/monumentos/OPERADEARAME150.png';
+import opera from '../images/monumentos/OPERADEARAME300.png';
 import { Actions } from 'react-native-router-flux';
 
 export default class Menu extends Component {
 
     errado(solido) {
-        Alert.alert('Errou.', 'A Ópera de Arame não é ' + solido + '.');
+        Alert.alert('Ops, você não acertou!', 'A Ópera de Arame não é ' + solido + '.');
     }
 
     certo(solido) {
-        Alert.alert('Acertou!', 'A Ópera de Arame é um cilindro.');
+        Alert.alert('Parabéns você Acertou!', 'A Ópera de Arame é um cilindro.');
         Actions.paralelepipedo();
     }
 
     render() {
         return (
             <View style={style.container}>
-                <View style={[style.titleContainer, { alignItems: 'center', paddingTop: 60 }]}>
-                    <Text style={style.titulo}>Real Solids</Text>
+                <View style={[style.titleContainer, { alignItems: 'center', paddingTop: 30 }]}>
+                    <Text style={style.titulo}>Qual sólido gerométrico você identifica nessa imagem ?</Text>
                 </View>
                 
                 <View style={style.imagem}>
@@ -100,7 +100,7 @@ const style = StyleSheet.create({
     },
 
     titulo: {
-        fontSize: 40,
+        fontSize: 20,
         fontWeight: 'bold',
         color: '#5cb85c',
         textAlign: 'center',
