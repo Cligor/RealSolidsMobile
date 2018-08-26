@@ -64,8 +64,6 @@ export default class Apresentacao extends Component {
                             </TouchableOpacity>
                         </View>
                     </ImageBackground>
-
-                   
                 </View>
             </View>
         );

@@ -4,7 +4,7 @@ import Nav from './realSolids/Nav';
 
 export default class App extends Component {
   render() {
-    return(
+    return (
       <Nav />
     );
   }  

@@ -22,10 +22,6 @@ const style = StyleSheet.create({
         justifyContent: 'center',
         margin: 10,
         elevation: 10
-
-
-
-
     },
 
     textButton: {

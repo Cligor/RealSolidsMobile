@@ -14,20 +14,27 @@ import { Actions } from 'react-native-router-flux';
 
 export default class Menu extends Component {
 
-    errado(solido) {
-        Alert.alert('Ops, você não acertou!', 'O MASP não é ' + solido + ', vamos tentar novamente: ');
+    async errado(solido) {
+        await Alert.alert(
+                'Ops, você não acertou!', 
+                `O MASP não é um ${solido}, vamos tentar novamente: `
+        );
     }
 
-    certo(solido) {
-        Alert.alert('Parabéns você Acertou!', 'O  MASP é um paralelepipedo.');
-        Actions.paralelepipedo();
+    async certo() {
+        await Alert.alert('Parabéns você Acertou!', 'O  MASP é um paralelepipedo.');
+        await Actions.paralelepipedo();
     }
 
     render() {
         return (
             <View style={style.container}>
                 <View style={[style.titleContainer, { alignItems: 'center', paddingTop: 30 }]}>
-                    <Text style={style.titulo}>Qual sólido gerométrico você identifica nessa imagem ?</Text>
+                    <Text 
+                        style={style.titulo}
+                    >
+                        Qual sólido gerométrico você identifica nessa imagem ?
+                    </Text>
                 </View>
                 
                 <View style={style.imagem}>

@@ -21,19 +21,72 @@ export default class Nav extends Component {
         return (
             <Router>
                 <Stack key='root'>
-                    <Scene key='inicio' component={Inicio} hideNavBar initial />
-                    <Scene key='apresentacao' component={Apresentacao} hideNavBar />
-                    <Scene key='menu' component={Menu} hideNavBar />
-                    <Scene key='masp' component={Masp} hideNavBar /> 
-                    <Scene key='operaArame' component={OperaArame} hideNavBar />                
-                    <Scene key='pracaRibeira' component={PracaRibeira} hideNavBar />    
-                    <Scene key='catedral' component={Catedral} hideNavBar />
-                    <Scene key='exercicioMasp' component={ExerciciosMasp} hideNavBar />
-                    <Scene key='exerciciosCatedral' component={ExerciciosCatedral} hideNavBar />
-                    <Scene key='exerciciosPracaRibeira' component={ExerciciosPracaRibeira} hideNavBar />
-                    <Scene key='exerciciosOperaArame' component={ExerciciosOperaArame} hideNavBar />
-                    <Scene key='paralelepipedo' component={Paralelepipedo} hideNavBar />
-                     <Scene key='cone' component={Cone} hideNavBar />
+                    <Scene 
+                        key='inicio' 
+                        component={Inicio} 
+                        hideNavBar 
+                        initial 
+                    />
+                    <Scene 
+                        key='apresentacao' 
+                        component={Apresentacao} 
+                        hideNavBar 
+                    />
+                    <Scene 
+                        key='menu' 
+                        component={Menu} 
+                        hideNavBar 
+                    />
+                    <Scene 
+                        key='masp' 
+                        component={Masp} 
+                        hideNavBar 
+                    /> 
+                    <Scene 
+                        key='operaArame' 
+                        component={OperaArame} 
+                        hideNavBar 
+                    />                
+                    <Scene 
+                        key='pracaRibeira' 
+                        component={PracaRibeira} 
+                        hideNavBar 
+                    />    
+                    <Scene 
+                        key='catedral' 
+                        component={Catedral} 
+                        hideNavBar 
+                    />
+                    <Scene 
+                        key='exercicioMasp' 
+                        component={ExerciciosMasp} 
+                        hideNavBar 
+                    />
+                    <Scene 
+                        key='exerciciosCatedral' 
+                        component={ExerciciosCatedral} 
+                        hideNavBar 
+                    />
+                    <Scene 
+                        key='exerciciosPracaRibeira' 
+                        component={ExerciciosPracaRibeira} 
+                        hideNavBar 
+                    />
+                    <Scene 
+                        key='exerciciosOperaArame' 
+                        component={ExerciciosOperaArame} 
+                        hideNavBar 
+                    />
+                    <Scene 
+                        key='paralelepipedo' 
+                        component={Paralelepipedo} 
+                        hideNavBar 
+                    />
+                    <Scene 
+                        key='cone' 
+                        component={Cone} 
+                        hideNavBar 
+                    />
                 </Stack>
             </Router>
         );

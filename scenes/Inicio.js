@@ -21,12 +21,16 @@ export default class Inicio extends Component {
                 
                 { /* Adicionar icone de informações */}
 
-                <View style={[style.conteudo, { marginTop: 60 }] }>
+                <View style={[style.conteudo, { marginTop: 60 }]}>
                     <Text style={style.titulo}>Real Solids</Text>
                 </View>
 
                 <View style={[style.conteudo, { justifyContent: 'center' }]}>
-                    <TouchableOpacity style={style.button} onPress={() => this.iniciar()}>
+                    <TouchableOpacity 
+                        style={style.button} 
+                        onPress={() => this.iniciar()} 
+                        activeOpacity={1}
+                    >
                         <Text style={style.textButton}>INICIAR</Text>
                     </TouchableOpacity>
                 </View>
@@ -57,10 +61,6 @@ const style = StyleSheet.create({
         height: 40,
         backgroundColor: '#5cb85c',
         elevation: 10,
-        activeOpacity={1}
-
-
-
     },
 
     textButton: {
