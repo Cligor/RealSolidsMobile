@@ -11,7 +11,7 @@ import {
 import { Actions } from 'react-native-router-flux';
 
 import next from '../images/icons/next.png';
-import conversa from '../images/mascote/conversa.png';
+import conversa from '../images/mascote/tales3.png';
 import cuboribeira from '../images/monumentos/CUBODARIBEIRA300.png';
   
 let falas = [];
@@ -21,9 +21,9 @@ export default class Apresentacao extends Component {
     constructor(props) {
         super(props);
         falas = [
-            'De origem medieval, a Praça da Ribeira, que contém a escultura “Cubo da Ribeira”',
-            'está inserida no centro histórico da cidade do Porto e é rodeada de casario antigo e colorido',
-            'Sendo uma das praças mais antigas da cidade, há séculos atrás esse local foi uma zona comercial.'
+            'O “Cubo da Ribeira” é uma escultura de José Rodrigues que fica na Praça da Ribeira, no centro histórico da cidade de Porto em Portugal.',
+            'Essa Praça é uma das mais antigas da cidade e é considerada Patrimônio da Humanidade desde 1996.',
+            'Séculos atrás, nesse local, existia uma zona comercial, com muitas tendas e comércio de peixes.'
         ];
         this.state = { indice: 0 };
     }

@@ -18,9 +18,8 @@ export default class Menu extends Component {
         Alert.alert('Ops, você não acertou!', 'A Ópera de Arame não é ' + solido + '.');
     }
 
-    certo(solido) {
-        Alert.alert('Parabéns você Acertou!', 'A Ópera de Arame é um cilindro.');
-        Actions.paralelepipedo();
+    certo(solido) { 
+        Actions.operaArameContorno();
     }
 
     render() {

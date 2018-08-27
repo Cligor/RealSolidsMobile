@@ -11,7 +11,7 @@ import {
 import { Actions } from 'react-native-router-flux';
 
 import next from '../images/icons/next.png';
-import conversa from '../images/mascote/conversa.png';
+import conversa from '../images/mascote/tales1.png';
 
 let falas = [];
 

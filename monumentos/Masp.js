@@ -11,7 +11,7 @@ import {
 import { Actions } from 'react-native-router-flux';
 
 import next from '../images/icons/next.png';
-import conversa from '../images/mascote/conversa.png';
+import conversa from '../images/mascote/tales3.png';
 import masp from '../images/monumentos/MASP300.png';
 
 let falas = [];
@@ -21,10 +21,9 @@ export default class Apresentacao extends Component {
     constructor(props) {
         super(props);
         falas = [
-            'Conhecido como MASP,',
-            'o museu de arte de São Paulo Assis Chateaubriand está instalado em uma ' +
-            'obra arquitetonica',
-            'planejada por Lina Bo Bardi e levou 10 anos para ser construída.'
+            'Conhecido como MASP, o Museu de arte de São Paulo Assis Chateaubriand, está instalado em uma obra da arquiteta Lina Bo Bardi e levou 10 anos para ser concluída.',
+            'Foi inaugurada em 1968, com a presença da rainha da Inglaterra, Elizabeth II. Já era uma obra inovadora e ousada, pois possuía 74 metros de vão livre, o maior de sua época.',
+            'Lá podemos conferir mais de 10 mil obras como pinturas, esculturas, objetos, fotografias, vídeos e vestuário de diversos períodos e continentes.'
         ];
         this.state = { indice: 0 };
     }

@@ -12,7 +12,7 @@ import { Actions } from 'react-native-router-flux';
 
 import next from '../images/icons/next.png';
 import conversa from '../images/mascote/tales3.png';
-import catedral from '../images/monumentos/CATEDRAL300.png';
+import masp from '../images/monumentos/CATEDRAL-Contorno300.png';
 
 let falas = [];
 
@@ -21,19 +21,19 @@ export default class Apresentacao extends Component {
     constructor(props) {
         super(props);
         falas = [
-            'A Catedral Basílica Menor Nossa Senhora da Glória, idealizada pelo Bispo Dom Jaime Luiz Coelho, é uma obra do arquiteto José Augusto Bellucci.',
-            'Foi inaugurada em 1972, na Praça da Catedral em Maringá, região norte do Paraná.',
-            'É inspirada nos “Sputniks” russos da corrida espacial e representava a forte presença católica na região.  Atualmente, é um dos principais elementos de identidade da cidade.'
+            'Parabéns. Você acertou',
+            'vamos aprender mais sobre o cone...'
+             
         ];
         this.state = { indice: 0 };
     }
 
     proximo() {
-        if (this.state.indice < 2) {
+        if (this.state.indice < 1) {
             const i = this.state.indice;
             this.setState({ indice: i + 1 });
         } else {
-            Actions.exerciciosCatedral();
+            Actions.paralelepipedo();
         }
     }
 
@@ -47,7 +47,7 @@ export default class Apresentacao extends Component {
                             }
                 >
                    
-                    <Image source={catedral} />
+                    <Image source={masp} />
                 </View>
 
                 <View style={[style.innerContainer, { height: '55%' }]}>
@@ -98,7 +98,6 @@ const style = StyleSheet.create({
     },
 
     fala: {
-        marginTop: 12,
         fontSize: 18,
     },
 

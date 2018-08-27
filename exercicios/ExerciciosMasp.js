@@ -22,8 +22,7 @@ export default class Menu extends Component {
     }
 
     async certo() {
-        await Alert.alert('Parabéns você Acertou!', 'O  MASP é um paralelepipedo.');
-        await Actions.paralelepipedo();
+        await Actions.maspContorno();
     }
 
     render() {
@@ -48,13 +47,13 @@ export default class Menu extends Component {
                         <Botao 
                             style={{ backgroundColor: 'red' }} 
                             text='Cubo'
-                            onPress={() => this.errado('um cubo')}
+                            onPress={() => this.errado('um Cubo')}
                         /> 
                         
                         <Botao
                             style={{ backgroundColor: 'green' }}
                             text='Pirâmide'
-                            onPress={() => this.errado('uma pirâmide')}
+                            onPress={() => this.errado('uma Pirâmide')}
                         />
                         { /* adicionar outros botões mais botões */}
                     </View>
@@ -70,7 +69,7 @@ export default class Menu extends Component {
                         <Botao 
                             style={{ backgroundColor: 'blue' }} 
                             text='Esfera'
-                            onPress={() => this.errado('uma esfera')}
+                            onPress={() => this.errado('uma Esfera')}
                         />
                     </View>
                 </View>

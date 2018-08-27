@@ -18,9 +18,8 @@ export default class Menu extends Component {
         Alert.alert('Ops, você não acertou!', 'A Catedral não é ' + solido + '.');
     }
 
-    certo(solido) {
-        Alert.alert('Parabéns você Acertou!', 'A Catedral é um cone.');
-        Actions.cone();
+    certo(solido) { 
+        Actions.catedralContorno();
     }
 
     render() {

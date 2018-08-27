@@ -11,7 +11,7 @@ import {
 import { Actions } from 'react-native-router-flux';
 
 import next from '../images/icons/next.png';
-import conversa from '../images/mascote/conversa.png';
+import conversa from '../images/mascote/tales3.png';
 import opera from '../images/monumentos/OPERADEARAME300.png';
 
 let falas = [];
@@ -21,15 +21,14 @@ export default class Apresentacao extends Component {
     constructor(props) {
         super(props);
         falas = [
-            'Inaugurada em 1992, é um símbolo da cidade de Curitiba.',
-            'Construída no Parque das Pedreiras a Ópera é um espaço de espetáculos de qualquer natureza.',
+            'Inaugurada em 1992, é um símbolo da cidade de Curitiba. Construída no Parque das Pedreiras, a Ópera é um espaço de espetáculos de qualquer natureza.',
             'É uma obra do arquiteto Domingos Bongestabs e possui estrutura tubular e teto de policarbonato transparente.'
         ];
         this.state = { indice: 0 };
     }
 
     proximo() {
-        if (this.state.indice < 2) {
+        if (this.state.indice < 1) {
             const i = this.state.indice;
             this.setState({ indice: i + 1 });
         } else {

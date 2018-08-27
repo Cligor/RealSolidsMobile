@@ -18,9 +18,8 @@ export default class Menu extends Component {
         Alert.alert('Ops, você não acertou!', 'A Praça da Ribeira não é ' + solido + '.');
     }
 
-    certo(solido) {
-        Alert.alert('Parabéns você Acertou!', 'A Praça da Ribeira é um cubo.');
-        Actions.cone();
+    certo(solido) { 
+        Actions.pracaRibeiraContorno();
     }
 
     render() {

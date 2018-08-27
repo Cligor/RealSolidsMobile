@@ -12,9 +12,13 @@ import ExerciciosMasp from '../exercicios/ExerciciosMasp';
 import ExerciciosPracaRibeira from '../exercicios/ExerciciosPracaRibeira';
 import ExerciciosOperaArame from '../exercicios/ExerciciosOperaArame';
 import ExerciciosCatedral from '../exercicios/ExerciciosCatedral';
-
 import Paralelepipedo from '../animacoes/Paralelepipedo';
 import Cone from '../animacoes/Cone';
+import MaspContorno from '../exercicio_contorno/MaspContorno';
+import CatedralContorno from '../exercicio_contorno/CatedralContorno';
+import OperaArameContorno from '../exercicio_contorno/OperaArameContorno';
+import PracaRibeiraContorno from '../exercicio_contorno/PracaRibeiraContorno';
+
 
 export default class Nav extends Component {
     render() {
@@ -85,6 +89,26 @@ export default class Nav extends Component {
                     <Scene 
                         key='cone' 
                         component={Cone} 
+                        hideNavBar 
+                    />
+                      <Scene 
+                        key='maspContorno' 
+                        component={MaspContorno} 
+                        hideNavBar 
+                    />
+                       <Scene 
+                        key='catedralContorno' 
+                        component={CatedralContorno} 
+                        hideNavBar 
+                    />
+                      <Scene 
+                        key='operaArameContorno' 
+                        component={OperaArameContorno} 
+                        hideNavBar 
+                    />
+                       <Scene 
+                        key='pracaRibeiraContorno' 
+                        component={PracaRibeiraContorno} 
                         hideNavBar 
                     />
                 </Stack>
