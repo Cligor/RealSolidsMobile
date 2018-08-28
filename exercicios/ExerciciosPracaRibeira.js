@@ -26,7 +26,7 @@ export default class Menu extends Component {
         return (
             <View style={style.container}>
                 <View style={[style.titleContainer, { alignItems: 'center', paddingTop: 30 }]}>
-                    <Text style={style.titulo}>Qual sólido gerométrico você identifica nessa imagem ?</Text>
+                    <Text style={style.titulo}>Qual sólido geométrico você identifica nessa imagem ?</Text>
                 </View>
                 
                 <View style={style.imagem}>

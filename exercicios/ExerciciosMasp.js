@@ -32,7 +32,7 @@ export default class Menu extends Component {
                     <Text 
                         style={style.titulo}
                     >
-                        Qual sólido gerométrico você identifica nessa imagem ?
+                        Qual sólido geométrico você identifica nessa imagem ?
                     </Text>
                 </View>
                 

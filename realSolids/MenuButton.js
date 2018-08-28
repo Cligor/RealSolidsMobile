@@ -21,7 +21,8 @@ const style = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         margin: 10,
-        elevation: 10
+        elevation: 10,
+        borderRadius: 20
     },
 
     textButton: {

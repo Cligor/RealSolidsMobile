@@ -3,10 +3,13 @@ package com.realsolids;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.brentvatne.react.ReactVideoPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
+//import com.brentvatne.react.ReactVideoPackage;
+
 
 
 import java.util.Arrays;
@@ -23,9 +26,13 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-          new MainReactPackage()
+          new MainReactPackage(),
+            new ReactVideoPackage()
+          // new ReactVideoPackage()
       );
     }
+
+    
 
     @Override
     protected String getJSMainModuleName() {

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View, Dimensions  } from 'react-native';
 import Video from 'react-native-video';
-import paralelepipedo from '../videos/paralelepipedo.mp4';
+import MeuVideo from '../videos/paralelepipedo.mp4';
 
 export default class Paralelepipedo extends Component {
     render() {
         return (
             <Video 
-                source={{ uri:  "paralelepipedo.mp4" }}
+                source={MeuVideo}
                 style={style.backgroundVideo}
             />
         );
@@ -21,5 +21,7 @@ const style = StyleSheet.create({
         left: 0,
         right: 0,
         bottom: 0,
+        width: Dimensions.get('window').width,
+        height: Dimensions.get('window').height
     },
 });
