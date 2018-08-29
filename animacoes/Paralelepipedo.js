@@ -7,7 +7,7 @@ export default class Paralelepipedo extends Component {
     render() {
         return (
             <Video 
-                source={MeuVideo}
+                source={{uri : 'paralelepipedo', type: 'mp4' }}
                 style={style.backgroundVideo}
             />
         );
