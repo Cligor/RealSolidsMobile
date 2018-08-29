@@ -3,6 +3,7 @@ import { Router, Stack, Scene } from 'react-native-router-flux';
 
 import Inicio from '../scenes/Inicio';
 import Apresentacao from '../scenes/Apresentacao';
+import Realidade from '../scenes/Realidade';
 import Menu from '../scenes/Menu';
 import Masp from '../monumentos/Masp';
 import PracaRibeira from '../monumentos/PracaRibeira';
@@ -109,6 +110,11 @@ export default class Nav extends Component {
                        <Scene 
                         key='pracaRibeiraContorno' 
                         component={PracaRibeiraContorno} 
+                        hideNavBar 
+                    />
+                     <Scene 
+                        key='realidade' 
+                        component={Realidade} 
                         hideNavBar 
                     />
                 </Stack>

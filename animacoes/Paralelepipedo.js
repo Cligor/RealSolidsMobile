@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Dimensions  } from 'react-native';
 import Video from 'react-native-video';
-import MeuVideo from '../videos/paralelepipedo.mp4';
 
 export default class Paralelepipedo extends Component {
     render() {
